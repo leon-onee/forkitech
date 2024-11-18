@@ -1,0 +1,35 @@
+@keyframes bell {
+	0% {
+		transform: rotate(0);
+	}
+	50% {
+		transform: rotate(60deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+
+.icon {
+	position: relative;
+	margin-right: 18px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	&.active {
+		&:after {
+			position: absolute;
+			content: '';
+			top: 0;
+			right: 0;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: #3fcbff;
+			border: 2px solid var(--color-header);
+		}
+		.img {
+			animation: bell 1s both infinite;
+		}
+	}
+}

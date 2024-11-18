@@ -1,0 +1,9 @@
+.btn {
+	width: 24px;
+	height: 24px;
+	display: grid;
+	place-content: center;
+	@media (min-width: 1024px) {
+		display: none;
+	}
+}

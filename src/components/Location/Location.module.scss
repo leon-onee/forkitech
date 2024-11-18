@@ -1,0 +1,30 @@
+.root {
+	display: flex;
+	padding: 16px 15px;
+	background: #f3f5f6;
+	align-items: center;
+	gap: 5px;
+	@media (min-width: 1024px) {
+		gap: 10px;
+		margin-right: 32px;
+		padding: 0;
+		background: transparent;
+	}
+}
+
+.icon {
+	width: 22px;
+	height: 22px;
+}
+
+.content {
+	color: #959597;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	@media (min-width: 1024px) {
+		color: #7c8792;
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
